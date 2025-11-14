@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../estilos/Login.css';
+import '../assets'
 
 const Login = () => {
   const [cnpj, definirCnpj] = useState('');

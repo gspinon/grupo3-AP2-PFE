@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import imagemPadrao from '../assets/profile-circle-svgrepo-com.svg';
+import '../assets'
 
 const CartaoProjeto = ({ 
   nomeProjeto, 
