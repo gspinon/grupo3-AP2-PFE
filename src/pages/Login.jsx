@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../estilos/Login.css';
+import loginLogo from '../assets/1_Desktop_ibmec_logo_430884bed1.svg'
 
 const Login = () => {
   const [cnpj, definirCnpj] = useState('');
@@ -25,7 +26,7 @@ const Login = () => {
         <div className="imagem-lateral"></div>
 
         <div className="formulario">
-          <img src="src/assets/1_Desktop_ibmec_logo_430884bed1.svg" alt="Logo Ibmec" className="logo" />
+          <img src={loginLogo} alt="Logo Ibmec" className="logo" />
 
           <form id="formularioLogin" onSubmit={aoEnviar}>
             <label htmlFor="cnpj">CNPJ</label>
