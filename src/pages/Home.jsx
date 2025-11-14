@@ -9,7 +9,7 @@ const Home = () => {
       </div>
 
       <div className="home-imagem-fundo">
-        <img src="src/assets/predio.png" alt="Prédio Ibmec" />
+        <img src="/public/predio.png" alt="Prédio Ibmec" />
       </div>
 
       <div className="botoes-home">
