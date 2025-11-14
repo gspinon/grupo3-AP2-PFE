@@ -25,12 +25,11 @@ const CartaoProjeto = ({
     };  return (
     <div 
       className="cartao-projeto"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onClick={() => setIsHovered(!isHovered)}
     >
       {!isHovered ? (
         <>
-          <img src={imagemPadrao} alt={nomeProjeto} />
+          <img src={imagemPadrao || logo} alt={nomeProjeto} />
           <div className="info-projeto">
             <span>{nomeProjeto}</span>
             {obterIcone() && (
