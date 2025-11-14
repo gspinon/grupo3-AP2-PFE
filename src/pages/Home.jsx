@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import predioIbmec from '../assets/predio.png'
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       </div>
 
       <div className="home-imagem-fundo">
-        <img src="public/predio.png" alt="Prédio Ibmec" />
+        <img src={predioIbmec} alt="Prédio Ibmec" />
       </div>
 
       <div className="botoes-home">

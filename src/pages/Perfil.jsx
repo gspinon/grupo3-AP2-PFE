@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import fotoPerfil from '../assets/profile-circle-svgrepo-com.svg'
 
 const Perfil = () => {
   const navegar = useNavigate();
@@ -20,7 +21,7 @@ const Perfil = () => {
         {/* Coluna Esquerda */}
         <div className="coluna-esquerda-perfil">
           <div className="moldura-foto">
-            <img src="src/assets/profile-circle-svgrepo-com.svg" alt="Foto Perfil" />
+            <img src={fotoPerfil} alt="Foto Perfil" />
           </div>
         </div>
 
