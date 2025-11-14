@@ -1,0 +1,136 @@
+@media (min-width: 480px) {
+  .nav-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-card {
+    position: static;
+    left: auto;
+    bottom: auto;
+    margin-bottom: 0;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu-link {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 15px;
+  }
+
+  .footer-actions {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .botoes-home {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .botoes-home a {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .container-projetos {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .coluna-projetos {
+    flex: 1;
+    min-width: auto;
+    margin-bottom: 15px;
+  }
+
+  .linha-formulario {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .campo-formulario.curto {
+    flex: 1 1 auto;
+  }
+
+  .container-perfil {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .coluna-esquerda-perfil {
+    flex: 1 1 auto;
+  }
+
+  .botao-logout {
+    align-self: stretch;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .conteudo-principal {
+    padding: 40px 20px;
+  }
+
+  .home-banner {
+    width: 80%;
+    max-width: 600px;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .botoes-home {
+    gap: 20px;
+  }
+
+  .botao-home {
+    padding: 15px 25px;
+    font-size: 16px;
+    min-width: 200px;
+  }
+
+  .container-formulario {
+    width: 80%;
+    max-width: 950px;
+    padding: 25px;
+  }
+
+  .moldura-foto {
+    width: 250px;
+    height: 250px;
+  }
+
+  .cabecalho-perfil h1 {
+    font-size: 28px;
+  }
+
+  .menu {
+    gap: 60px;
+  }
+
+  .menu-link {
+    font-size: 16px;
+  }
+}

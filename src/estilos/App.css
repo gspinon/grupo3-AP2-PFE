@@ -1,0 +1,500 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* NAVBAR */
+.nav {
+  background: var(--azul-nav);
+  padding: 10px 0;
+}
+
+.nav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+.logo-card img {
+  display: block;
+  height: 38px;
+  max-width: 100%;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.menu-link {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  transition: opacity 0.2s;
+}
+
+.menu-link:hover {
+  opacity: 0.7;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo-principal {
+  flex: 1;
+  padding: 20px 16px;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--azul-nav);
+  border-top: 4px solid #0a2c63;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.footer-copy {
+  color: #fff;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ffd24d;
+}
+
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-btn {
+  background: #F4AC04;
+  color: #042454;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.footer-btn:hover {
+  background: #ffd24d;
+}
+
+/* HOME */
+.home-banner {
+  background-color: #f8b400;
+  color: #002855;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 90%;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.home-imagem-fundo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.home-imagem-fundo img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+.botoes-home {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 25px 0;
+  align-items: center;
+}
+
+.botoes-home a {
+  width: 100%;
+  max-width: 250px;
+  text-decoration: none;
+}
+
+.botao-home {
+  background-color: #002855;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  transition: 0.3s;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.botao-home:hover {
+  background-color: #f8b400;
+  color: #002855;
+}
+
+/* PÁGINA PROJETOS */
+.titulo-pagina {
+  text-align: center;
+  color: #042454;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #F4AC04;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.container-projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coluna-projetos {
+  background-color: #E9E9E9;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.coluna-projetos h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #042454;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.cartao-projeto {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 70px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cartao-projeto:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cartao-projeto img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cartao-projeto-detalhes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.detalhe-item {
+  font-size: 13px;
+  color: #042454;
+  line-height: 1.4;
+}
+
+.detalhe-item strong {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.info-projeto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  flex: 1;
+}
+
+.info-projeto span {
+  color: #042454;
+  font-weight: 500;
+}
+
+.botao-info {
+  background: none;
+  border: none;
+  color: #042454;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.botao-info:hover {
+  color: #F4AC04;
+}
+
+/* FORMULÁRIO SUBMETER PROJETO */
+.container-formulario {
+  background-color: #d9d9d9;
+  width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.formulario-projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.linha-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-formulario label {
+  font-weight: bold;
+  color: #0b1b45;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.campo-formulario textarea {
+  resize: none;
+  height: 120px;
+}
+
+.container-botao {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botao-enviar {
+  background-color: #f5ad00;
+  color: #0b1b45;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Inter", sans-serif;
+}
+
+.botao-enviar:hover {
+  background-color: #e19c00;
+}
+
+/* PERFIL */
+.cabecalho-perfil {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cabecalho-perfil h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #042454;
+  text-align: center;
+  margin: 0 auto;
+  padding: 12px 0;
+  border-bottom: 3px solid #F4AC04;
+  display: inline-block;
+}
+
+.container-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.coluna-esquerda-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coluna-direita-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.secao-perfil h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #042454;
+  margin-bottom: 6px;
+  font-family: "Inter", sans-serif;
+}
+
+.campo-perfil {
+  min-height: 40px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #042454;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.botao-logout {
+  background-color: #f4a900;
+  color: #042454;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
+  align-self: center;
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.3s;
+}
+
+.botao-logout:hover {
+  background-color: #c39100;
+}
+
+.moldura-foto {
+  width: 150px;
+  height: 150px;
+  background-color: #D9D9D9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.moldura-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* SOBRE */
+.card-sobre {
+  background-color: var(--azul-escuro);
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.titulo-card {
+  background-color: var(--amarelo);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  cursor: default;
+  color: #042454;
+  font-family: "Inter", sans-serif;
+}
+
+.texto-card {
+  background-color: var(--cinza);
+  padding: 15px;
+  border-radius: 8px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}

@@ -1,0 +1,208 @@
+.container-login {
+  background: #09204f;
+  color: #09204f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.container-login * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-login .login-box {
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  min-height: auto;
+}
+
+.container-login .imagem-lateral {
+  background: url('imagens/economia_desk_e568a84a0d.png') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  opacity: 70%;
+}
+
+.container-login .formulario {
+  background: #e3e3e3;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0;
+}
+
+.container-login .logo {
+  width: 100px;
+  margin-bottom: 15px;
+  align-self: center;
+}
+
+.container-login #formLogin {
+  width: 100%;
+}
+
+.container-login label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #09204f;
+  width: 100%;
+  display: block;
+}
+
+.container-login input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container-login .btn-entrar {
+  width: 100%;
+  background-color: #09204f;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 0;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container-login .btn-entrar:hover {
+  background-color: #0a2a6a;
+}
+
+.container-login .link-empresa {
+  margin-top: 12px;
+  color: #09204f;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container-login .botoes-laterais {
+  background: #09204f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 0;
+}
+
+.container-login .btn-lateral {
+  background-color: #f4a900;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: #09204f;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.container-login .btn-lateral:hover {
+  background-color: #e69a00;
+}
+
+/* Tablets (768px+) */
+@media (min-width: 768px) {
+  .container-login {
+    padding: 15px;
+  }
+
+  .container-login .login-box {
+    flex-direction: row;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .container-login .imagem-lateral {
+    width: 40%;
+    height: auto;
+  }
+
+  .container-login .formulario {
+    width: 45%;
+    border-right: 5px solid #fff;
+    border-radius: 0 8px 8px 0;
+    padding: 40px 50px;
+  }
+
+  .container-login .botoes-laterais {
+    width: 15%;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: 10px 0 0 10px;
+    gap: 20px;
+  }
+
+  .container-login .btn-lateral {
+    flex: 1;
+    margin: 0;
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+
+  .container-login .logo {
+    width: 140px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+  }
+
+  .container-login label {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .container-login input {
+    padding: 12px 15px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .container-login .btn-entrar {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  .container-login .link-empresa {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .container-login {
+    padding: 20px;
+  }
+
+  .container-login .login-box {
+    max-width: 1030px;
+  }
+}
